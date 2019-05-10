@@ -1,0 +1,445 @@
+body, html {
+  height: 100%;
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow: hidden;
+  position: absolute;
+  z-index: -3;
+  margin:0;
+}
+
+a{
+  color: #3C4043;
+}
+
+p{
+  font-family:p22-underground, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 19px;
+  line-height: 35px;
+  color: #3C4043;
+}
+
+h3{
+  font-family: p22-underground;
+  font-size: 30px;
+  color: #2C2F32;
+}
+
+.welcome{
+  margin: 35vh 20vw;
+  text-align: center;
+  position: absolute;
+  z-index: 20;
+  color: white;
+}
+
+
+#mainnavcontainer{
+  width:100vw;
+  height:100vh;
+  visibility: hidden;
+  opacity: 0;
+  position: fixed;
+  z-index: 100;
+  top:0;
+  right:0;
+}
+
+#mainnavcontainer > a{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  opacity: 0.5;
+}
+
+
+#mainnav{
+  width: 80vw;
+  position: absolute;
+  margin: 5vh 10vw;
+  z-index: 100;
+}
+
+#mainnavcontainer:target{
+  visibility: visible;
+  opacity: 1;
+}
+
+#bookblockmodalcontainer{
+  width:100vw;
+  height:100vh;
+  visibility: hidden;
+  opacity: 0;
+  position: fixed;
+  z-index: 100;
+  top:0;
+  right:0;
+}
+
+#bookblockmodalcontainer > a{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  opacity: 0.5;
+}
+
+
+#bookblockmodal{
+  position: absolute;
+  width: 100%;
+  margin: 20vh 0;
+  z-index: 100;
+}
+
+#bookblockmodalcontainer:target{
+  visibility: visible;
+  opacity: 1;
+}
+
+.bgimghome{
+  height: 100%;
+  width: 100vw;
+  background-image: url("images/BG.jpg");
+  position: absolute;
+  z-index: -3;
+}
+
+.file{
+  margin: 2em 0 0 2em;
+  position: absolute;
+  z-index: -2;
+}
+
+.file img {
+  width: 65vw;
+}
+
+.FileContentPara{
+  position: absolute;
+  width: 55vw;
+  padding: 3em 4em 0 5em;
+  color: #2B2B2B;
+}
+
+.FileContent{
+  margin: 4.5vw 0 0 4.5vw;
+  width: 700px;
+  color: black;
+  position: absolute;
+  z-index: 4;
+}
+
+.FileContent img {
+  width: 56vw;
+}
+
+.logo {
+  z-index: 30;
+  position: absolute;
+  right: 42.5vw;
+  width: 15vw;
+  display: block;
+  position: absolute;
+  margin: 20px 0;
+}
+
+.logo img {
+
+  margin: 0;
+  padding: 0;
+  width: 15vw;
+}
+.bookmarks img{
+  width: 5vw;
+}
+
+.bookmark1 {
+  margin: 30vh 0 0 60.5vw;
+    z-index: 2;
+}
+.bookmark2 {
+  margin: -7vh 0 0 60.5vw;
+    z-index: 1;
+}
+.bookmark3 {
+  margin: -7vh 0 0 60.5vw;
+    z-index: 0;
+}
+
+.rightimg{
+text-align: right;
+}
+
+/*index*/
+.bgimg{
+  height: 100%;
+  width: 100%;
+    background-image: url("images/index.svg");
+    position: absolute;
+  background-size:cover;
+  background-repeat: no-repeat;
+}
+
+/*221B*/
+
+.bgimg221B{
+  height: 70vh;
+  width: 70vw;
+  background-image: url("images/museum.svg");
+  position: absolute;
+  z-index: -3;
+  background-size: cover;
+  background-repeat: no-repeat;
+  left: 400px;
+/*  -webkit-animation: myfirst 20s ; /* Safari 4.0 - 8.0 */
+ animation: myfirst 10s ;
+}
+
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes myfirst {
+ 0%   {left: 700px;}
+ 100% {left: 400px;}
+}
+
+@keyframes myfirst {
+ 0%   {left: 700px;}
+ 100% {left: 400px;}
+}
+
+
+/*arthur*/
+
+.bgimgarthur{
+  top: 7vh;
+  height: 60vh;
+  width: 70vw;
+  background-image: url("images/arthur.svg");
+  position: absolute;
+  z-index: -3;
+  background-size: cover;
+  background-repeat: no-repeat;
+  left: 400px;
+/*  -webkit-animation: myfirst 20s ; /* Safari 4.0 - 8.0 */
+ animation: myfirst 10s ;
+}
+
+.trainwindowirene{
+  height: 100%;
+  width: 100%;
+    background-image: url("images/trainseats.png");
+    position: absolute;
+  background-size:cover;
+  background-repeat: no-repeat;
+}
+
+.trainwindow{
+  height: 100%;
+  width: 100%;
+    background-image: url("images/trainseatswindow.png");
+    position: absolute;
+  background-size:cover;
+  background-repeat: no-repeat;
+}
+.sorry{
+  height: 100%;
+  width: 100%;
+    background-image: url("images/sorry/sorry2.svg");
+    position: absolute;
+  background-size:cover;
+  background-repeat: no-repeat;
+}
+
+.copyright{
+  height: 100%;
+  width: 100%;
+    background-image: url("images/copyright.svg");
+    position: absolute;
+  background-size:cover;
+  background-repeat: no-repeat;
+}
+
+.para221B{
+width: 35vw;
+height: 100vh;
+padding: 3em 4em 0 5em;
+
+}
+
+.para221Bcontainer{
+  width:100vw;
+  height: 100%;
+  position: absolute;
+  z-index: 2;
+  overflow: scroll;
+}
+
+.quote{
+  font-family: p22-underground;
+  font-size: 20px;
+  color: #F93258;
+
+  width:35vw;
+  line-height: 35px;
+}
+
+a:hover {
+  color: yellow;
+}
+
+#red:hover{
+  fill: #F93258;
+}
+
+.jplanner{
+  margin: 1em 1em 3em ;
+}
+
+#map {
+  height: 40vh;
+  width: 30vw;
+  margin: 3em 2vw 0;
+ }
+
+
+
+
+
+
+/* filmtv*/
+.bgimgfilmtv{
+  height: 100%;
+  width: 100%;
+  background-image: url("images/library.png");
+  position: absolute;
+  z-index: -3;
+  background-size:cover;
+  background-repeat: no-repeat;
+}
+
+.bgimgfilmtv img{
+  height: 100%;
+  width: 100%;
+}
+
+.wall{
+  height: 100%;
+  width: 100%;
+  background-image: url("images/wall.jpg");
+  position: absolute;
+  z-index: -2;
+  background-size: cover;
+  background-repeat: no-repeat;
+  left: -1800px;
+/*  -webkit-animation: myfirst 20s ; /* Safari 4.0 - 8.0 */
+ animation: wall 2s ;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes wall {
+ 0%   {left: 0px;}
+ 100% {left: -1800px;}
+}
+
+@keyframes wall {
+ 0%   {left: 0px;}
+ 100% {left: -1800px;}
+}
+
+.train{
+  height: 100%;
+  width: 100%;
+    background-image: url("images/trainseatswindow.png");
+    position: absolute;
+  background-size:cover;
+  background-repeat: no-repeat;
+  z-index: 0;
+  opacity:0;
+  -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
+    animation-name: example;
+    animation-duration: 3s;
+  }
+
+#train{
+  animation-timing-function: cubic-bezier(.9,0,.91,.27);
+}
+
+  /* Safari 4.0 - 8.0 */
+  @-webkit-keyframes example {
+    from {opacity: 1;}
+    to {opacity: 0;}
+  }
+
+  /* Standard syntax */
+  @keyframes example {
+    from {opacity: 1;}
+    to {opacity: 0;}
+  }
+
+  /*Irene*/
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+
+  #wrapper {
+    position: absolute;
+    z-index: 9;
+    width:600px; /* width of viewport in your case 100% */
+    height:400px; /* height of viewport in your case 100% */
+    overflow:hidden;
+    margin:4em 0 0 4em;
+    border:none;
+    background-color: #CECEEF;
+    /*position:fixed;*/
+  }
+
+  #map {
+    position:relative; /* what #map img is relative to */
+  }
+
+  #map img{
+    margin: -15em;
+    width:1000px; /* width of viewport in your case 100% */
+    height:900px;
+    position:absolute; /* need this to make dragging easy */
+  }
+
+
+  button{
+  margin: 0 6em 0;
+  }
+
+  .windowcontainer{
+  position:absolute;
+  width: 680px;
+  height: 460px;
+  background-color: #EB924B;
+  overflow: hidden;
+  border-radius: 30px;
+  margin-top: 1.6em;
+  margin-left: -8.4vw;
+  text-align:right;
+  }
+
+    .windowcontainer2{
+      right: 22em;
+    width: 15vw;
+    display: block;
+    position: absolute;
+    }
